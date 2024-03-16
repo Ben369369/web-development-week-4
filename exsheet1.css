@@ -1,0 +1,123 @@
+/* Default styles for all screen sizes */
+.header {
+    background-color: orange;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    font-family: georgia, serif;
+}
+
+/* Styles for clickable boxes */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:orange;  /* Background color of the box */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+    
+}
+
+.button:hover {
+    background-color:orange; /* Darker color on hover */
+}
+
+.paragraph p {
+    font-family: Georgia, serif; /* Specify the font family */
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size */
+    color: black; /* Set the font color */
+    line-height: 1.5; /* Set the line height */
+    letter-spacing: 0.5px; /* Adjust the letter spacing */
+    text-align: justify; /* Align text to justify */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+.box {
+    width: 200px; /* Set width */
+    height: 200px; /* Set height to make it square */
+    background-color: orange; /* Blue background */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center align the content */
+    line-height: 200px; /* Center the text vertically */
+}
+
+/* Styles for the contact list */
+.contact-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.contact-list li {
+    margin-bottom: 10px; /* Add space between contact items */
+}
+
+.contact-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange; /* Background color of the box */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    font-family: Georgia, serif
+}
+
+.contact-list a:hover {
+    background-color: orange; /* Darker color on hover */
+}
+
+.logo {
+    
+        width: 200px; /* Set the width of the logo */
+        height: 100px; /* Set the height of the logo */
+        background-image: url('logo.png'); /* Set the background image */
+        background-size: cover; /* Cover the entire element with the background image */
+        background-position: center; /* Center the background image */
+        border-radius: 10px; /* Rounded corners */
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        margin: 0 auto; /* Center the logo horizontally */
+    }
+
+/* Apply CSS Reset to remove default padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background image to the entire body */
+body {
+    background-image: url('pink.jpeg'); /* Replace 'background_picture.jpg' with your background image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .logo {
+        width: 80px; /* Decrease logo width for smaller screens */
+    }
+
+    .button {
+        padding: 8px 16px; /* Adjust button padding for smaller screens */
+    }
+
+    .box {
+        width: 150px; /* Decrease box width for smaller screens */
+        height: 150px; /* Decrease box height for smaller screens */
+        line-height: 150px; /* Center the text vertically for smaller screens */
+    }
+}
